@@ -1,5 +1,12 @@
-[AIR (Audio Intermediate Representation) DSP Architecture Overview]
+[AIR MicroSoC DSP Architecture Overview]
 
-Goal: Real-time audio processing architecture with sub-1ms latency using adaptive floating/fixed-point hybrid DSP pipeline, LC3 codec abstraction, and SPIR-V-based quantization.
+Goal: predictable per-frame audio processing on micro SoCs. The real-time path uses
+DMA-fed Q31 fixed-point CPU/DSP work; GPU compute is optional, asynchronous analysis
+only. Codec transforms, quantization, and packetization must not depend on GPU timing.
 
-Note: This is a functional architectural draft collaboratively designed by Jehyun (제현) and GPT-4o via prompt-based vibe-coding.
+Frame contract: 48 kHz mono/stereo with 7.5 ms or 10 ms frames. The runtime sums
+critical-stage worst-case execution costs before accepting a frame. End-to-end wireless
+latency is owned by the codec and transport profile and is not represented as sub-1 ms.
+
+Codec contract: AIR packets are experimental and independent from LC3 / LE Audio BAP.
+Production LC3 and LDAC paths are supplied through dedicated codec and transport adapters.
