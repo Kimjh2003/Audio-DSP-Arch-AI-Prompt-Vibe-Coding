@@ -27,4 +27,3 @@ struct WorkRequest {
 WorkPlacement chooseWorkPlacement(const MicroSoCProfile& profile, const WorkRequest& request);
 
 }  // namespace air
-

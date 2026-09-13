@@ -18,4 +18,3 @@ inline int32_t multiplyQ31(int32_t left, int32_t right) {
 }
 
 }  // namespace air
-

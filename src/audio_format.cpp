@@ -16,4 +16,3 @@ bool AudioFormat::isValidForMicroSoC() const {
 }
 
 }  // namespace air
-

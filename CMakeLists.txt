@@ -16,4 +16,3 @@ if (AIR_BUILD_TESTS)
     target_link_libraries(air_microsoc_tests PRIVATE air_microsoc_runtime)
     add_test(NAME air_microsoc_tests COMMAND air_microsoc_tests)
 endif()
-

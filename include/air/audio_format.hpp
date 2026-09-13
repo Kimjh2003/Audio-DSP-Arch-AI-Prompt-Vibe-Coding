@@ -18,4 +18,3 @@ struct AudioFormat {
 };
 
 }  // namespace air
-
