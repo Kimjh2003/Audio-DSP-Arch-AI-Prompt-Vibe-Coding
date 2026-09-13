@@ -1,4 +1,4 @@
-# AIR MicroSoC audio runtime
+# AIR MicroSoC audio runtime — GPT 5.6 Terra 수정
 
 마이크로 SoC에서도 예측 가능한 오디오 프레임 처리를 목표로 AIR를 다시 정의한 예시다.
 실시간 본선은 **DMA + CPU/DSP Q31 fixed-point** 로만 구성하고, GPU는 deadline을

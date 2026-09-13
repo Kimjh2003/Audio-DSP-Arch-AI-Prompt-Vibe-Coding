@@ -1,4 +1,4 @@
-[AIR MicroSoC DSP Architecture Overview]
+[AIR MicroSoC DSP Architecture Overview — GPT 5.6 Terra 수정]
 
 Goal: predictable per-frame audio processing on micro SoCs. The real-time path uses
 DMA-fed Q31 fixed-point CPU/DSP work; GPU compute is optional, asynchronous analysis
